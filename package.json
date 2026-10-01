@@ -1,0 +1,33 @@
+{
+  "name": "agentready",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "dev": "node node_modules/next/dist/bin/next dev --webpack -H 127.0.0.1",
+    "build": "node node_modules/next/dist/bin/next build --webpack",
+    "start": "node node_modules/next/dist/bin/next start -H 127.0.0.1",
+    "typecheck": "node node_modules/typescript/lib/tsc.js --noEmit",
+    "lint": "node scripts/lint.mjs",
+    "test": "node --test --test-isolation=none tests/analysis.test.ts tests/fetch-crawl.test.ts tests/evidence.test.ts tests/scoring.test.ts tests/persistence.test.ts tests/production-persistence.test.ts",
+    "smoke:public": "node scripts/smoke-public.ts",
+    "smoke:lifecycle": "node scripts/smoke-lifecycle.ts",
+    "security:update-ip-policy": "node scripts/update-ip-policy.mjs",
+    "schema:update-types": "node scripts/update-schema-types.mjs"
+  },
+  "dependencies": {
+    "ipaddr.js": "1.9.1",
+    "next": "16.3.8",
+    "parse5": "8.0.1",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "^6.0.3"
+  }
+}
