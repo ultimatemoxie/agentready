@@ -89,6 +89,7 @@ test('the first three existing recommendations form the visible action summary',
 test('clean display URL omits tracking while technical sources remain available', () => {
   assert.equal(cleanWebsiteUrl('https://example.com/shop/?utm_source=campaign&gclid=abc#top'), 'https://example.com/shop');
   assert.equal(cleanWebsiteUrl('https://example.com/shop?category=shirts&utm_medium=email#top'), 'https://example.com/shop?category=shirts');
+  assert.equal(cleanWebsiteUrl('https://chowdeck.com/?gad_source=1&gad_campaignid=23801370604&gbraid=abc&gclid=xyz'), 'https://chowdeck.com');
   const value = structuredClone(report);
   value.run.normalizedUrl = 'https://meridian.example/?utm_source=campaign';
   const rendered = renderReport(value);

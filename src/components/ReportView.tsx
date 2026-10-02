@@ -31,7 +31,7 @@ export function cleanWebsiteUrl(input: string): string {
   try {
     const url = new URL(input);
     for (const key of [...url.searchParams.keys()]) {
-      if (/^utm_/i.test(key) || /^(gclid|gbraid|wbraid|fbclid|msclkid|mc_cid|mc_eid)$/i.test(key)) url.searchParams.delete(key);
+      if (/^(utm_|gad_)/i.test(key) || /^(gclid|gbraid|wbraid|fbclid|msclkid|mc_cid|mc_eid)$/i.test(key)) url.searchParams.delete(key);
     }
     return url.origin + (url.pathname === '/' ? '' : url.pathname.replace(/\/+$/, '')) + url.search;
   } catch {
