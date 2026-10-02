@@ -151,7 +151,7 @@ export function ReportView({ report }: { report: AnalysisReport }) {
       <div className="report-hero-copy"><span className="report-kicker">AGENTREADY / WEBSITE ASSESSMENT</span>
         <h1>{profile.name}</h1><p className="report-clean-url">{cleanWebsiteUrl(run.normalizedUrl)}</p>
         <div className="report-meaning"><h2>What this means</h2><p>{band.meaning}</p></div>
-        {incomplete && <p className="report-partial-note"><strong>Partial analysis.</strong> Some checks could not be completed, so this score should be treated as provisional.</p>}
+        {incomplete && <p className="report-partial-note"><strong>Partial analysis.</strong> {run.overallScore === null ? 'Some checks could not be completed, so a reliable overall score is unavailable.' : 'Some checks could not be completed, so this score should be treated as provisional.'}</p>}
       </div>
       <div className="report-score-summary" data-band={band.tone}>
         <span className="report-score-caption">AGENT READINESS</span>

@@ -62,7 +62,8 @@ test('low coverage suppresses the ring number and partial coverage remains expli
   const rendered = renderReport(low);
   assert.match(rendered, /AgentReady score unavailable: insufficient coverage/);
   assert.match(rendered, /Partial analysis/);
-  assert.match(rendered, /score should be treated as provisional/);
+  assert.match(rendered, /a reliable overall score is unavailable/);
+  assert.doesNotMatch(rendered, /score should be treated as provisional/);
   assert.doesNotMatch(rendered, /class="score-ring-center"><strong>\d+/);
 });
 
