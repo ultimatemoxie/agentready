@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 const title = 'AgentReady — Is Your Business Ready for AI Agents?';
 const description = 'Check how easily AI agents can understand, find, and act on your business website. Get an evidence-based readiness score and clear recommendations.';
-const image = '/agentready-social.png';
+const image = '/agentready-social-uploaded.png';
 
 export const metadata: Metadata = {
   title,
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     description,
     images: [{
       url: image,
-      width: 1200,
-      height: 630,
+      width: 1672,
+      height: 941,
       alt: 'AgentReady Research Preview — Is your business ready for AI agents?',
     }],
   },
