@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">AgentReady Research Preview</title>
+  <desc id="description">Is your business ready for AI agents? See what AI can understand, what’s missing, and what to improve.</desc>
+  <rect width="1200" height="630" fill="#FAF8F3"/>
+  <rect width="1200" height="10" fill="#031127"/>
+  <path d="M 0 594 H 1200" stroke="#E7E1D5" stroke-width="2"/>
+  <path d="M 77 105 H 735" stroke="#E7E1D5" stroke-width="2"/>
+  <rect x="76" y="50" width="47" height="47" fill="#031127"/>
+  <text x="88" y="85" fill="#E1C27A" font-family="Georgia, 'Times New Roman', serif" font-size="36">A.</text>
+  <text x="140" y="80" fill="#031127" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="2.3">AGENTREADY</text>
+  <text x="141" y="99" fill="#A67723" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="3.3">RESEARCH PREVIEW</text>
+  <text x="76" y="225" fill="#031127" font-family="Georgia, 'Times New Roman', serif" font-size="72" letter-spacing="-3">Is your business</text>
+  <text x="76" y="308" fill="#031127" font-family="Georgia, 'Times New Roman', serif" font-size="72" letter-spacing="-3">ready for AI</text>
+  <text x="76" y="391" fill="#B3812B" font-family="Georgia, 'Times New Roman', serif" font-size="72" letter-spacing="-3">agents?</text>
+  <text x="78" y="471" fill="#566176" font-family="Arial, Helvetica, sans-serif" font-size="26">See what AI can understand, what’s missing,</text>
+  <text x="78" y="510" fill="#566176" font-family="Arial, Helvetica, sans-serif" font-size="26">and what to improve.</text>
+  <rect x="828" y="150" width="296" height="338" rx="13" fill="#061A3A"/>
+  <path d="M 851 185 H 1101" stroke="#52647E" stroke-width="1"/>
+  <text x="852" y="177" fill="#E1C27A" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2">READINESS REPORT</text>
+  <circle cx="976" cy="325" r="78" fill="none" stroke="#30415B" stroke-width="12"/>
+  <circle cx="976" cy="325" r="78" fill="none" stroke="#E1C27A" stroke-width="12" stroke-linecap="round" stroke-dasharray="353 490" transform="rotate(-90 976 325)"/>
+  <text x="976" y="338" text-anchor="middle" fill="#FAF8F3" font-family="Georgia, 'Times New Roman', serif" font-size="69">72</text>
+  <text x="976" y="363" text-anchor="middle" fill="#B7C2D0" font-family="Arial, Helvetica, sans-serif" font-size="18">/ 100</text>
+  <text x="976" y="450" text-anchor="middle" fill="#FAF8F3" font-family="Arial, Helvetica, sans-serif" font-size="21">Good foundation</text>
+  <text x="77" y="619" fill="#A67723" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">BY MYRIC</text>
+  <text x="1123" y="619" text-anchor="end" fill="#566176" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.5">AN EXPERIMENTAL RESEARCH PROJECT</text>
+</svg>

@@ -2,7 +2,7 @@
 
 import { useRef, useState, type FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
-import { createSubmissionGate } from '../lib/client/submission-gate.ts';
+import { createSubmissionGate } from '../../lib/client/submission-gate.ts';
 
 const steps = [
   ['01', 'Discover', 'Public pages, metadata, robots and machine-readable hints.'],
