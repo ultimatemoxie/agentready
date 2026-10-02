@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { createElement, type ReactNode } from 'react';
 import { extractPage } from '../src/lib/analysis/extract.ts';
@@ -42,6 +42,17 @@ test('report metadata lives in a closed advanced section', () => {
   assert.match(rendered, /Scoring version/);
   assert.ok(rendered.indexOf('Report ID') > rendered.indexOf('<details class="advanced-run-info">'));
   assert.doesNotMatch(rendered, /<details class="advanced-run-info" open/);
+  assert.doesNotMatch(rendered, /Recent analyses|href="\/reports"/);
+});
+
+test('public recent-run routes and navigation are absent while direct report routes remain', () => {
+  assert.equal(existsSync('src/app/reports/page.tsx'), false);
+  assert.equal(existsSync('src/app/api/reports/route.ts'), false);
+  assert.equal(existsSync('src/app/report/[id]/page.tsx'), true);
+  assert.equal(existsSync('src/app/api/reports/[id]/route.ts'), true);
+  for (const path of ['src/app/(home)/page.tsx', 'src/app/report/[id]/page.tsx', 'src/app/report/[id]/not-found.tsx']) {
+    assert.doesNotMatch(readFileSync(path, 'utf8'), /Recent analyses|href="\/reports"/);
+  }
 });
 
 test('score ring has an accessible label, deterministic band and coverage', () => {

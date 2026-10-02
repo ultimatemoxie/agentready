@@ -34,7 +34,7 @@ export default function Home() {
   return <>
     <header className="site-header"><div className="shell header-inner">
       <a className="wordmark" href="#top" aria-label="AgentReady home"><span className="mark">A<span className="mark-dot">.</span></span><span>AGENT<span>READY</span></span></a>
-      <div className="header-right"><span className="header-index">MYRIC / RESEARCH / 001</span><a href="/reports" className="header-link">Recent analyses</a><a href="#approach" className="header-link">The framework <span aria-hidden="true">↗</span></a></div>
+      <div className="header-right"><span className="header-index">MYRIC / RESEARCH / 001</span><a href="#approach" className="header-link">The framework <span aria-hidden="true">↗</span></a></div>
     </div></header>
     <main id="top">
       <section className="hero"><div className="shell hero-grid">

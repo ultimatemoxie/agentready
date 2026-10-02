@@ -2,7 +2,7 @@ import type { StoredAnalysisRun } from '../lib/types.ts';
 
 export function SavedRunHeader({ run }: { run: StoredAnalysisRun }) {
   return <div className="shell saved-run-toolbar">
-    <nav aria-label="Report navigation"><a href="/">← New analysis</a><a href="/reports">Recent analyses</a></nav>
+    <nav aria-label="Report navigation"><a href="/">← New analysis</a></nav>
     <details className="advanced-run-info"><summary>Advanced report info</summary>
       <dl><div><dt>Report ID</dt><dd><code>{run.id}</code></dd></div>
         <div><dt>Created</dt><dd>{new Date(run.createdAt).toLocaleString()}</dd></div>
