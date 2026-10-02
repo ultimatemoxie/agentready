@@ -10,7 +10,7 @@
     "start": "node node_modules/next/dist/bin/next start -H 127.0.0.1",
     "typecheck": "node node_modules/typescript/lib/tsc.js --noEmit",
     "lint": "node scripts/lint.mjs",
-    "test": "node --test --test-isolation=none tests/analysis.test.ts tests/fetch-crawl.test.ts tests/evidence.test.ts tests/scoring.test.ts tests/persistence.test.ts tests/production-persistence.test.ts",
+    "test": "node --test --test-isolation=none tests/analysis.test.ts tests/fetch-crawl.test.ts tests/evidence.test.ts tests/scoring.test.ts tests/persistence.test.ts tests/production-persistence.test.ts tests/report-ux.test.ts",
     "smoke:public": "node scripts/smoke-public.ts",
     "smoke:lifecycle": "node scripts/smoke-lifecycle.ts",
     "security:update-ip-policy": "node scripts/update-ip-policy.mjs",
